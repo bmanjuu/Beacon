@@ -7,5 +7,10 @@ target 'Beacon' do
 
   # Pods for Beacon
 pod 'SnapKit'
+pod 'Firebase/Core'
+pod 'Firebase/Messaging'
+pod 'Firebase/Auth'
+pod 'Firebase/Storage'
+pod 'Firebase/Database'
 
 end
