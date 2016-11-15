@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		088AE1AEAB2E3200B0672F7C /* Pods_Beacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 254EE1AEA022C67AEBD5E1F9 /* Pods_Beacon.framework */; };
+		6E8094351DDBA9A2007D2C37 /* GroupChatSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8094341DDBA9A2007D2C37 /* GroupChatSetUp.swift */; };
+		6E977ABE1DDBA3F300C0B8A4 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E977ABD1DDBA3F300C0B8A4 /* AppState.swift */; };
+		6E977AC01DDBA42700C0B8A4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E977ABF1DDBA42700C0B8A4 /* Constants.swift */; };
+		6E977AC51DDBA48A00C0B8A4 /* FirebaseMessagingSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E977AC41DDBA48A00C0B8A4 /* FirebaseMessagingSetup.swift */; };
+		6E977AC71DDBA57600C0B8A4 /* MeasurementHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E977AC61DDBA57600C0B8A4 /* MeasurementHelper.swift */; };
+		6E9BC68F1DDB940F000FFF4C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6E9BC68E1DDB940F000FFF4C /* GoogleService-Info.plist */; };
 		A4F1F5781DD6B48D001C8DDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F1F5771DD6B48D001C8DDA /* AppDelegate.swift */; };
 		A4F1F57A1DD6B48D001C8DDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F1F5791DD6B48D001C8DDA /* ViewController.swift */; };
 		A4F1F57D1DD6B48D001C8DDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4F1F57B1DD6B48D001C8DDA /* Main.storyboard */; };
@@ -18,6 +24,12 @@
 
 /* Begin PBXFileReference section */
 		254EE1AEA022C67AEBD5E1F9 /* Pods_Beacon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beacon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E8094341DDBA9A2007D2C37 /* GroupChatSetUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupChatSetUp.swift; sourceTree = "<group>"; };
+		6E977ABD1DDBA3F300C0B8A4 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		6E977ABF1DDBA42700C0B8A4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6E977AC41DDBA48A00C0B8A4 /* FirebaseMessagingSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseMessagingSetup.swift; sourceTree = "<group>"; };
+		6E977AC61DDBA57600C0B8A4 /* MeasurementHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasurementHelper.swift; sourceTree = "<group>"; };
+		6E9BC68E1DDB940F000FFF4C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8352DCBCB43F349139263CE8 /* Pods-Beacon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beacon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Beacon/Pods-Beacon.debug.xcconfig"; sourceTree = "<group>"; };
 		A4F1F5741DD6B48D001C8DDA /* Beacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F1F5771DD6B48D001C8DDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +63,18 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		6E977AC11DDBA45400C0B8A4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6E977ABD1DDBA3F300C0B8A4 /* AppState.swift */,
+				6E977ABF1DDBA42700C0B8A4 /* Constants.swift */,
+				6E977AC41DDBA48A00C0B8A4 /* FirebaseMessagingSetup.swift */,
+				6E8094341DDBA9A2007D2C37 /* GroupChatSetUp.swift */,
+				6E977AC61DDBA57600C0B8A4 /* MeasurementHelper.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		A1C60316594D6C119C1D508E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -80,12 +104,14 @@
 		A4F1F5761DD6B48D001C8DDA /* Beacon */ = {
 			isa = PBXGroup;
 			children = (
+				6E977AC11DDBA45400C0B8A4 /* Models */,
 				A4F1F5771DD6B48D001C8DDA /* AppDelegate.swift */,
 				A4F1F5791DD6B48D001C8DDA /* ViewController.swift */,
 				A4F1F57B1DD6B48D001C8DDA /* Main.storyboard */,
 				A4F1F5811DD6B48D001C8DDA /* Assets.xcassets */,
 				A4F1F5831DD6B48D001C8DDA /* LaunchScreen.storyboard */,
 				A4F1F5861DD6B48D001C8DDA /* Info.plist */,
+				6E9BC68E1DDB940F000FFF4C /* GoogleService-Info.plist */,
 				A4F1F57E1DD6B48D001C8DDA /* Beacon.xcdatamodeld */,
 			);
 			path = Beacon;
@@ -126,6 +152,7 @@
 				TargetAttributes = {
 					A4F1F5731DD6B489001C8DDA = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = KXY9EDFTF5;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -153,6 +180,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E9BC68F1DDB940F000FFF4C /* GoogleService-Info.plist in Resources */,
 				A4F1F5851DD6B48D001C8DDA /* LaunchScreen.storyboard in Resources */,
 				A4F1F5821DD6B48D001C8DDA /* Assets.xcassets in Resources */,
 				A4F1F57D1DD6B48D001C8DDA /* Main.storyboard in Resources */,
@@ -214,9 +242,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E977AC01DDBA42700C0B8A4 /* Constants.swift in Sources */,
+				6E977AC51DDBA48A00C0B8A4 /* FirebaseMessagingSetup.swift in Sources */,
+				6E977AC71DDBA57600C0B8A4 /* MeasurementHelper.swift in Sources */,
 				A4F1F5801DD6B48D001C8DDA /* Beacon.xcdatamodeld in Sources */,
 				A4F1F57A1DD6B48D001C8DDA /* ViewController.swift in Sources */,
+				6E8094351DDBA9A2007D2C37 /* GroupChatSetUp.swift in Sources */,
 				A4F1F5781DD6B48D001C8DDA /* AppDelegate.swift in Sources */,
+				6E977ABE1DDBA3F300C0B8A4 /* AppState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +293,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -309,6 +343,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -337,7 +372,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8352DCBCB43F349139263CE8 /* Pods-Beacon.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KXY9EDFTF5;
 				INFOPLIST_FILE = Beacon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bettyfung.Beacon;
@@ -350,7 +387,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B1B3C619CF8BFC69896EF5EF /* Pods-Beacon.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KXY9EDFTF5;
 				INFOPLIST_FILE = Beacon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bettyfung.Beacon;
