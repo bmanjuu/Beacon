@@ -66,3 +66,4 @@ fastlane/test_output
 Secrets.swift
 Beacon/.DS_Store
 Beacon.xcworkspace/xcuserdata/Lloyd.xcuserdatad/UserInterfaceState.xcuserstate
+Pods/.DS_Store
