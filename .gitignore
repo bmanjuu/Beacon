@@ -64,6 +64,4 @@ fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
 Secrets.swift
-.DS_Store
-Beacon.xcworkspace/xcuserdata/Lloyd.xcuserdatad/UserInterfaceState.xcuserstate
-Pods/.DS_Store
+Beacon/.DS_Store
