@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		088AE1AEAB2E3200B0672F7C /* Pods_Beacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 254EE1AEA022C67AEBD5E1F9 /* Pods_Beacon.framework */; };
 		11888B121DDBE2CD0048EC61 /* OnboardingPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11888B111DDBE2CD0048EC61 /* OnboardingPageVC.swift */; };
+		11888B171DDBE50D0048EC61 /* Happiness.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 11888B131DDBE50D0048EC61 /* Happiness.jpg */; };
+		11888B181DDBE50D0048EC61 /* Happy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 11888B141DDBE50D0048EC61 /* Happy.jpg */; };
+		11888B191DDBE50D0048EC61 /* happy2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 11888B151DDBE50D0048EC61 /* happy2.jpg */; };
+		11888B1A1DDBE50D0048EC61 /* happy3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 11888B161DDBE50D0048EC61 /* happy3.jpg */; };
 		6EEE1EF21DDBC8780021CC96 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEE1EF11DDBC8780021CC96 /* Secrets.swift */; };
 		6EEE1EF41DDBC9520021CC96 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6EEE1EF31DDBC9520021CC96 /* GoogleService-Info.plist */; };
 		A40371EA1DDB9BA8001A1398 /* GoogleNaturalLangAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40371E91DDB9BA8001A1398 /* GoogleNaturalLangAPIClient.swift */; };
@@ -22,6 +26,10 @@
 
 /* Begin PBXFileReference section */
 		11888B111DDBE2CD0048EC61 /* OnboardingPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingPageVC.swift; sourceTree = "<group>"; };
+		11888B131DDBE50D0048EC61 /* Happiness.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Happiness.jpg; sourceTree = "<group>"; };
+		11888B141DDBE50D0048EC61 /* Happy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Happy.jpg; sourceTree = "<group>"; };
+		11888B151DDBE50D0048EC61 /* happy2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = happy2.jpg; sourceTree = "<group>"; };
+		11888B161DDBE50D0048EC61 /* happy3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = happy3.jpg; sourceTree = "<group>"; };
 		254EE1AEA022C67AEBD5E1F9 /* Pods_Beacon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beacon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E8094341DDBA9A2007D2C37 /* GroupChatSetUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupChatSetUp.swift; sourceTree = "<group>"; };
 		6E977ABD1DDBA3F300C0B8A4 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
@@ -61,6 +69,17 @@
 				11888B111DDBE2CD0048EC61 /* OnboardingPageVC.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		11888B1B1DDBE5180048EC61 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				11888B131DDBE50D0048EC61 /* Happiness.jpg */,
+				11888B141DDBE50D0048EC61 /* Happy.jpg */,
+				11888B151DDBE50D0048EC61 /* happy2.jpg */,
+				11888B161DDBE50D0048EC61 /* happy3.jpg */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 		588705F2FF23D8B51FD371A9 /* Pods */ = {
@@ -125,6 +144,7 @@
 				A4F1F57E1DD6B48D001C8DDA /* Beacon.xcdatamodeld */,
 				A40371E91DDB9BA8001A1398 /* GoogleNaturalLangAPIClient.swift */,
 				6EEE1EF11DDBC8780021CC96 /* Secrets.swift */,
+				11888B1B1DDBE5180048EC61 /* Images */,
 			);
 			path = Beacon;
 			sourceTree = "<group>";
@@ -192,9 +212,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11888B181DDBE50D0048EC61 /* Happy.jpg in Resources */,
+				11888B191DDBE50D0048EC61 /* happy2.jpg in Resources */,
 				6EEE1EF41DDBC9520021CC96 /* GoogleService-Info.plist in Resources */,
 				A4F1F5851DD6B48D001C8DDA /* LaunchScreen.storyboard in Resources */,
 				A4F1F5821DD6B48D001C8DDA /* Assets.xcassets in Resources */,
+				11888B171DDBE50D0048EC61 /* Happiness.jpg in Resources */,
+				11888B1A1DDBE50D0048EC61 /* happy3.jpg in Resources */,
 				A4F1F57D1DD6B48D001C8DDA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
