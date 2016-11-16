@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		088AE1AEAB2E3200B0672F7C /* Pods_Beacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 254EE1AEA022C67AEBD5E1F9 /* Pods_Beacon.framework */; };
+		11888B121DDBE2CD0048EC61 /* OnboardingPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11888B111DDBE2CD0048EC61 /* OnboardingPageVC.swift */; };
 		6EEE1EF21DDBC8780021CC96 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEE1EF11DDBC8780021CC96 /* Secrets.swift */; };
 		6EEE1EF41DDBC9520021CC96 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6EEE1EF31DDBC9520021CC96 /* GoogleService-Info.plist */; };
 		A40371EA1DDB9BA8001A1398 /* GoogleNaturalLangAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40371E91DDB9BA8001A1398 /* GoogleNaturalLangAPIClient.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11888B111DDBE2CD0048EC61 /* OnboardingPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingPageVC.swift; sourceTree = "<group>"; };
 		254EE1AEA022C67AEBD5E1F9 /* Pods_Beacon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beacon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E8094341DDBA9A2007D2C37 /* GroupChatSetUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupChatSetUp.swift; sourceTree = "<group>"; };
 		6E977ABD1DDBA3F300C0B8A4 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
@@ -53,11 +55,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		11888B101DDBE1350048EC61 /* ViewControllers */ = {
+		11888B101DDBE1350048EC61 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				11888B111DDBE2CD0048EC61 /* OnboardingPageVC.swift */,
 			);
-			name = ViewControllers;
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		588705F2FF23D8B51FD371A9 /* Pods */ = {
@@ -110,10 +113,10 @@
 		A4F1F5761DD6B48D001C8DDA /* Beacon */ = {
 			isa = PBXGroup;
 			children = (
-				11888B101DDBE1350048EC61 /* ViewControllers */,
 				6E977AC11DDBA45400C0B8A4 /* Models */,
-				A4F1F5771DD6B48D001C8DDA /* AppDelegate.swift */,
+				11888B101DDBE1350048EC61 /* Controllers */,
 				A4F1F5791DD6B48D001C8DDA /* ViewController.swift */,
+				A4F1F5771DD6B48D001C8DDA /* AppDelegate.swift */,
 				A4F1F57B1DD6B48D001C8DDA /* Main.storyboard */,
 				A4F1F5811DD6B48D001C8DDA /* Assets.xcassets */,
 				A4F1F5831DD6B48D001C8DDA /* LaunchScreen.storyboard */,
@@ -251,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11888B121DDBE2CD0048EC61 /* OnboardingPageVC.swift in Sources */,
 				A40371EA1DDB9BA8001A1398 /* GoogleNaturalLangAPIClient.swift in Sources */,
 				6EEE1EF21DDBC8780021CC96 /* Secrets.swift in Sources */,
 				A4F1F5801DD6B48D001C8DDA /* Beacon.xcdatamodeld in Sources */,
