@@ -15,7 +15,8 @@ class OnboardingPageVC: UIPageViewController {
     private(set) lazy var orderedViewControllers: [UIViewController] = {
         return [self.newPageVC(VCorder: "First"),
                 self.newPageVC(VCorder: "Second"),
-                self.newPageVC(VCorder: "Third")]
+                self.newPageVC(VCorder: "Third"),
+                self.newPageVC(VCorder: "Final")]
     }()
     
     private func newPageVC(VCorder: String) -> UIViewController {
