@@ -53,6 +53,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11888B101DDBE1350048EC61 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		588705F2FF23D8B51FD371A9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +110,7 @@
 		A4F1F5761DD6B48D001C8DDA /* Beacon */ = {
 			isa = PBXGroup;
 			children = (
+				11888B101DDBE1350048EC61 /* ViewControllers */,
 				6E977AC11DDBA45400C0B8A4 /* Models */,
 				A4F1F5771DD6B48D001C8DDA /* AppDelegate.swift */,
 				A4F1F5791DD6B48D001C8DDA /* ViewController.swift */,
