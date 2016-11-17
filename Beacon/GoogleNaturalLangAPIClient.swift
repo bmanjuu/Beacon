@@ -16,23 +16,36 @@ struct GoogleNaturalLangAPIClient {
     //4. assess the results 
     //5. filter out negative stuff / keep neutralish - positive posts
     
-//    static let chatJSONData = try? String(contentsOfFile: "testingLangAPI.json")
-    //json file is dictionary
+    private struct Constants {
+        static let analyzeSentimentBaseURL = "https://language.googleapis.com/v1beta1/documents:analyzeSentiment?key=\(Secrets.googleNaturalLangAPIKey)"
+    }
     
-    
-    //options: nsjsonserialization, bundle path stuff
-    
-    static func printStuff() {
+    static func obtainJSONContent() {
         print("CALLED FUNCTION")
         
         let jsonFilePath = Bundle.main.path(forResource: "testingLangAPI", ofType: "json")
         print("JSON FILE PATH: \(jsonFilePath)")
         let url = URL(fileURLWithPath: jsonFilePath!)
         let data = try! Data(contentsOf: url)
-        let json = try! JSONSerialization.jsonObject(with: data, options: [])
+        let json = try? JSONSerialization.jsonObject(with: data, options: [])
+        //let jsonData = try! JSONSerialization.data(withJSONObject: data, options: .prettyPrinted)
         
         print("JSON CONTENT HERE: \(json)")
+        //print("JSON DATA: \(jsonData)")
         
+        
+        let request = NSMutableURLRequest(url: URL(string: Constants.analyzeSentimentBaseURL)!)
+        request.httpMethod = "POST"
+        request.httpBody = data
+
+        print("request: \(request) \nrequestbody: \(request.httpBody)")
+        //requestbody currently prints: Optional(113 bytes), not sure what this means but we'll figure it out!
+        
+//        let task = URLSession.shared.dataTask(with: request, completionHandler: { data, response, error -> Void in
+//            
+//        })
+        //ISSUE: ambiguous reference to member dataTask(with:completionHandler:)
+    
     }
     
 }
