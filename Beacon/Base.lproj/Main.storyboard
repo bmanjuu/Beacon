@@ -211,6 +211,9 @@
                                             <state key="normal" title="Sign In Anonymously">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
+                                            <connections>
+                                                <segue destination="aeP-XU-TpE" kind="show" id="5e7-Us-qqi"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e47-Ox-nXf">
                                             <rect key="frame" x="97" y="329" width="180" height="45"/>
@@ -222,6 +225,9 @@
                                             <state key="normal" title="Sign In">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
+                                            <connections>
+                                                <segue destination="aeP-XU-TpE" kind="show" id="bH1-Eg-bUz"/>
+                                            </connections>
                                         </button>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter your name..." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UNH-wK-M4e">
                                             <rect key="frame" x="63" y="201" width="248" height="30"/>
@@ -268,10 +274,21 @@
             </objects>
             <point key="canvasLocation" x="2421.5999999999999" y="105.69715142428787"/>
         </scene>
+        <!--UserInput-->
+        <scene sceneID="Pjc-c9-Stc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UserInput" id="aeP-XU-TpE" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cs0-Hx-prm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3048" y="138"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Happiness.jpg" width="640" height="427"/>
         <image name="Happy.jpg" width="640" height="480"/>
         <image name="happy3.jpg" width="4000" height="2669"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="bH1-Eg-bUz"/>
+    </inferredMetricsTieBreakers>
 </document>
