@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		088AE1AEAB2E3200B0672F7C /* Pods_Beacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 254EE1AEA022C67AEBD5E1F9 /* Pods_Beacon.framework */; };
 		114066961DE20BC100C44EF3 /* UserInput.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 114066951DE20BC100C44EF3 /* UserInput.storyboard */; };
+		1140669B1DE2169900C44EF3 /* UserInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1140669A1DE2169900C44EF3 /* UserInputViewController.swift */; };
 		11888B121DDBE2CD0048EC61 /* OnboardingPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11888B111DDBE2CD0048EC61 /* OnboardingPageVC.swift */; };
 		11888B171DDBE50D0048EC61 /* Happiness.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 11888B131DDBE50D0048EC61 /* Happiness.jpg */; };
 		11888B181DDBE50D0048EC61 /* Happy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 11888B141DDBE50D0048EC61 /* Happy.jpg */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		114066951DE20BC100C44EF3 /* UserInput.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserInput.storyboard; sourceTree = "<group>"; };
+		1140669A1DE2169900C44EF3 /* UserInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInputViewController.swift; sourceTree = "<group>"; };
 		11888B111DDBE2CD0048EC61 /* OnboardingPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingPageVC.swift; sourceTree = "<group>"; };
 		11888B131DDBE50D0048EC61 /* Happiness.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Happiness.jpg; sourceTree = "<group>"; };
 		11888B141DDBE50D0048EC61 /* Happy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Happy.jpg; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				11888B111DDBE2CD0048EC61 /* OnboardingPageVC.swift */,
+				1140669A1DE2169900C44EF3 /* UserInputViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				A40371EA1DDB9BA8001A1398 /* GoogleNaturalLangAPIClient.swift in Sources */,
 				A4F1F5801DD6B48D001C8DDA /* Beacon.xcdatamodeld in Sources */,
 				A4F1F57A1DD6B48D001C8DDA /* ViewController.swift in Sources */,
+				1140669B1DE2169900C44EF3 /* UserInputViewController.swift in Sources */,
 				A4F1F5781DD6B48D001C8DDA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
