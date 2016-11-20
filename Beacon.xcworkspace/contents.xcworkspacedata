@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:UserInput.storyboard">
+   </FileRef>
+   <FileRef
       location = "group:Beacon.xcodeproj">
    </FileRef>
    <FileRef

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		088AE1AEAB2E3200B0672F7C /* Pods_Beacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 254EE1AEA022C67AEBD5E1F9 /* Pods_Beacon.framework */; };
+		114066961DE20BC100C44EF3 /* UserInput.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 114066951DE20BC100C44EF3 /* UserInput.storyboard */; };
 		11888B121DDBE2CD0048EC61 /* OnboardingPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11888B111DDBE2CD0048EC61 /* OnboardingPageVC.swift */; };
 		11888B171DDBE50D0048EC61 /* Happiness.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 11888B131DDBE50D0048EC61 /* Happiness.jpg */; };
 		11888B181DDBE50D0048EC61 /* Happy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 11888B141DDBE50D0048EC61 /* Happy.jpg */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		114066951DE20BC100C44EF3 /* UserInput.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserInput.storyboard; sourceTree = "<group>"; };
 		11888B111DDBE2CD0048EC61 /* OnboardingPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingPageVC.swift; sourceTree = "<group>"; };
 		11888B131DDBE50D0048EC61 /* Happiness.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Happiness.jpg; sourceTree = "<group>"; };
 		11888B141DDBE50D0048EC61 /* Happy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Happy.jpg; sourceTree = "<group>"; };
@@ -63,6 +65,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		114066971DE20BD800C44EF3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				114066951DE20BC100C44EF3 /* UserInput.storyboard */,
+				A4F1F57B1DD6B48D001C8DDA /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		11888B101DDBE1350048EC61 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,7 +147,7 @@
 				11888B101DDBE1350048EC61 /* Controllers */,
 				A4F1F5791DD6B48D001C8DDA /* ViewController.swift */,
 				A4F1F5771DD6B48D001C8DDA /* AppDelegate.swift */,
-				A4F1F57B1DD6B48D001C8DDA /* Main.storyboard */,
+				114066971DE20BD800C44EF3 /* Views */,
 				A4F1F5811DD6B48D001C8DDA /* Assets.xcassets */,
 				A4F1F5831DD6B48D001C8DDA /* LaunchScreen.storyboard */,
 				A4F1F5861DD6B48D001C8DDA /* Info.plist */,
@@ -212,6 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				114066961DE20BC100C44EF3 /* UserInput.storyboard in Resources */,
 				11888B181DDBE50D0048EC61 /* Happy.jpg in Resources */,
 				11888B191DDBE50D0048EC61 /* happy2.jpg in Resources */,
 				6EEE1EF41DDBC9520021CC96 /* GoogleService-Info.plist in Resources */,
