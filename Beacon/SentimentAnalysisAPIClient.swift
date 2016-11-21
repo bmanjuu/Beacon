@@ -13,9 +13,10 @@ struct SentimentAnalysisAPIClient {
     
     //1. obtain JSON chat file (collaborate with Lloyd on this)
     //2. direct this JSON chat file for the 'document' part of the HTTP call to the sentiment analyzer API
-    //3. make the API call (NSURLSession)
-    //4. assess the results 
-    //5. filter out negative stuff / keep neutralish - positive posts
+    //3. format firebase JSON chat file for API call
+    //4. make the API call (NSURLSession)
+    //5. assess the results
+    //6. filter out negative stuff / keep neutralish - positive posts
     
     private struct Constants {
         static let analyzeSentimentBaseURL = "http://www.sentiment140.com/api/bulkClassifyJson"
@@ -66,9 +67,18 @@ struct SentimentAnalysisAPIClient {
                 completion(data, nil)
             }
             
-            
             }
         }
+    
+//    static func obtainFirebaseChatJSON(completion: @escaping (NSDictionary?, Error?) ->()) {
+//        print("obtain firebase JSON function called")
+//        Alamofire.request("https://friendlychat-f69f0.firebaseio.com/").responseJSON { (response) in
+//            print("firebase response: \(response)")
+//            if let jsonResponse = response.result.value as? NSDictionary {
+//                completion(jsonResponse, nil)
+//            }
+//        }
+//    }
     
 }
 

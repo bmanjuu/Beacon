@@ -24,6 +24,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         SentimentAnalysisAPIClient.analyzeSentiment(json: testJSONDocument, completion: {_,_ in
             print("completed")
             })
+        
+        let secondTestJSON = [
+            "data" : [["text": "Pizza and cookies are awesome.", "name": "Julie"],
+            ["text": "I hate Titanic.", "name": "Jen"]]]
+        
+        SentimentAnalysisAPIClient.analyzeSentiment(json: secondTestJSON, completion: {_,_ in
+            print("second test json complete")
+        })
+    
+    
         return true
     }
     
