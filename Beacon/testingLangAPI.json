@@ -1,2 +1,4 @@
-{"data": [{"text": "I love Titanic."},
-          {"text": "I hate Titanic."}]}
+{"data": [{"text": "I love Titanic.",
+          "name": "Julie"},
+          {"text": "I hate Titanic.",
+          "name": "Jen"}]}

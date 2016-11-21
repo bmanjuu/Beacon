@@ -72,36 +72,3 @@ struct SentimentAnalysisAPIClient {
     
 }
 
-//let request = NSMutableURLRequest(url: URL(string: Constants.analyzeSentimentBaseURL)!)
-//request.httpMethod = "POST"
-////request.httpBody = data //this may need to be the actual json
-////request.httpBody = try! JSONSerialization.data(withJSONObject: json, options: [])
-//
-//
-//print("request: \(request) \nrequestbody: \(request.httpBody)")
-////requestbody currently prints: Optional(113 bytes), not sure what this means but we'll figure it out!
-//
-//let task = URLSession.shared.dataTask(with: request as URLRequest, completionHandler: { data, response, error -> Void in
-//    
-//    if let data = data {
-//        print("DATA: \(data)")
-//    }
-//    
-//    do {
-//        let json = try JSONSerialization.data(withJSONObject: testData, options: .prettyPrinted)
-//        request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
-//        request.httpBody = json
-//        print("INSIDE DO REQUEST BODY: \(request.httpBody)")
-//    } catch {
-//        print("error: \(error)")
-//    }
-//    
-//    if let response = response {
-//        print("RESPONSE HERE: \(response)")
-//    } else {
-//        print("no HTTP response. error: \(error)")
-//    } //CURRENTLY GETTING WEIRD RESPONSE
-//    
-//})
-//task.resume()
-
