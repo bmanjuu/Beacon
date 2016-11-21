@@ -15,7 +15,7 @@
 		11888B1A1DDBE50D0048EC61 /* happy3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 11888B161DDBE50D0048EC61 /* happy3.jpg */; };
 		11888B1D1DDBEA7E0048EC61 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11888B1C1DDBEA7E0048EC61 /* Secrets.swift */; };
 		6EEE1EF41DDBC9520021CC96 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6EEE1EF31DDBC9520021CC96 /* GoogleService-Info.plist */; };
-		A40371EA1DDB9BA8001A1398 /* GoogleNaturalLangAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40371E91DDB9BA8001A1398 /* GoogleNaturalLangAPIClient.swift */; };
+		A40371EA1DDB9BA8001A1398 /* SentimentAnalysisAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40371E91DDB9BA8001A1398 /* SentimentAnalysisAPIClient.swift */; };
 		A4BF53DC1DDCADDF00E70736 /* testingLangAPI.json in Resources */ = {isa = PBXBuildFile; fileRef = A4BF53DB1DDCADDF00E70736 /* testingLangAPI.json */; };
 		A4F1F5781DD6B48D001C8DDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F1F5771DD6B48D001C8DDA /* AppDelegate.swift */; };
 		A4F1F57A1DD6B48D001C8DDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F1F5791DD6B48D001C8DDA /* ViewController.swift */; };
@@ -40,7 +40,7 @@
 		6E977AC61DDBA57600C0B8A4 /* MeasurementHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasurementHelper.swift; sourceTree = "<group>"; };
 		6EEE1EF31DDBC9520021CC96 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8352DCBCB43F349139263CE8 /* Pods-Beacon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beacon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Beacon/Pods-Beacon.debug.xcconfig"; sourceTree = "<group>"; };
-		A40371E91DDB9BA8001A1398 /* GoogleNaturalLangAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleNaturalLangAPIClient.swift; sourceTree = "<group>"; };
+		A40371E91DDB9BA8001A1398 /* SentimentAnalysisAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentimentAnalysisAPIClient.swift; sourceTree = "<group>"; };
 		A4BF53DB1DDCADDF00E70736 /* testingLangAPI.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testingLangAPI.json; sourceTree = "<group>"; };
 		A4F1F5741DD6B48D001C8DDA /* Beacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F1F5771DD6B48D001C8DDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -144,7 +144,7 @@
 				A4F1F5861DD6B48D001C8DDA /* Info.plist */,
 				6EEE1EF31DDBC9520021CC96 /* GoogleService-Info.plist */,
 				A4F1F57E1DD6B48D001C8DDA /* Beacon.xcdatamodeld */,
-				A40371E91DDB9BA8001A1398 /* GoogleNaturalLangAPIClient.swift */,
+				A40371E91DDB9BA8001A1398 /* SentimentAnalysisAPIClient.swift */,
 				A4BF53DB1DDCADDF00E70736 /* testingLangAPI.json */,
 				11888B1C1DDBEA7E0048EC61 /* Secrets.swift */,
 				11888B1B1DDBE5180048EC61 /* Images */,
@@ -284,7 +284,7 @@
 			files = (
 				11888B121DDBE2CD0048EC61 /* OnboardingPageVC.swift in Sources */,
 				11888B1D1DDBEA7E0048EC61 /* Secrets.swift in Sources */,
-				A40371EA1DDB9BA8001A1398 /* GoogleNaturalLangAPIClient.swift in Sources */,
+				A40371EA1DDB9BA8001A1398 /* SentimentAnalysisAPIClient.swift in Sources */,
 				A4F1F5801DD6B48D001C8DDA /* Beacon.xcdatamodeld in Sources */,
 				A4F1F57A1DD6B48D001C8DDA /* ViewController.swift in Sources */,
 				A4F1F5781DD6B48D001C8DDA /* AppDelegate.swift in Sources */,

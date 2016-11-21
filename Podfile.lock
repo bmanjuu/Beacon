@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.1.0)
   - Firebase/Auth (3.9.0):
     - Firebase/Core
     - FirebaseAuth (= 3.0.6)
@@ -58,6 +59,7 @@ PODS:
   - SnapKit (3.0.2)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.0)
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
@@ -66,6 +68,7 @@ DEPENDENCIES:
   - SnapKit
 
 SPEC CHECKSUMS:
+  Alamofire: e266cf991b933498df791e645e0d8ac294492153
   Firebase: ff77ffb77b317c3720fef57a60e9335cebf962e6
   FirebaseAnalytics: 6e58fc9b397664369ac7617fb0ba93fab6ba7b5b
   FirebaseAuth: 96e9674ff31d6e1f826d53e26aa003a57cab0295
@@ -80,6 +83,6 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: a1f8ed39e4fe21c68957daed472c7afbcdf29166
   SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
 
-PODFILE CHECKSUM: 470ccb250e602d705c17d02b0195cfa159bbcab0
+PODFILE CHECKSUM: 8f12ef9ae02d54fba52da3a2a32c867f1e0a3d9b
 
 COCOAPODS: 1.1.1

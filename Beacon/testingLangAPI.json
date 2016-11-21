@@ -1,7 +1,2 @@
-{
-  "document":{
-    "type":"PLAIN_TEXT",
-    "content":"Puppies make me happy!"
-	}, 
-	"encodingType" : "UTF8"
-}
+{"data": [{"text": "I love Titanic."},
+          {"text": "I hate Titanic."}]}

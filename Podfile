@@ -12,5 +12,6 @@ pod 'Firebase/Messaging'
 pod 'Firebase/Auth'
 pod 'Firebase/Storage'
 pod 'Firebase/Database'
+pod 'Alamofire', '~> 4.0'
 
 end
