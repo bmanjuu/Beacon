@@ -11,12 +11,16 @@ import Alamofire
 
 struct SentimentAnalysisAPIClient {
     
-    //1. obtain JSON chat file (collaborate with Lloyd on this)
-    //2. direct this JSON chat file for the 'document' part of the HTTP call to the sentiment analyzer API
-    //3. format firebase JSON chat file for API call
-    //4. make the API call (NSURLSession)
-    //5. assess the results
-    //6. filter out negative stuff / keep neutralish - positive posts
+    //0. access messages from firebase
+    //1. format messages from firebase so that it can be passed into sentiment API
+            // 'json' file is technically an array of dictionaries
+            // each dictionary = 1 message 
+            // dictionary format: ["text" : "blah blah bloop bloop batman",
+            //                     "name" : "a girl has no name"]
+    //2. call sentiment analyzer API (may need to modify argument name of API method call to more accurately reflect what we're passing in... maybe 'messages'?) -- figure out how many messages you want to process at once so that we stay under limit!
+    //3. assess the results
+    //4. filter out negative stuff / keep neutral - positive posts
+    //5. may need to create a list of words that we definitely do not want to be passed around in the community (i.e. offensive terms that the sentiment analyzer may not necessarily understand)
     
     private struct Constants {
         static let analyzeSentimentBaseURL = "http://www.sentiment140.com/api/bulkClassifyJson"
