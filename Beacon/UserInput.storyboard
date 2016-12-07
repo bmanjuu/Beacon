@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xKJ-a3-97f">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--User Input View Controller-->
+        <scene sceneID="GG1-C1-mvu">
+            <objects>
+                <viewController id="xKJ-a3-97f" customClass="UserInputViewController" customModule="Beacon" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b2r-cR-qm8"/>
+                        <viewControllerLayoutGuide type="bottom" id="yR5-2v-iKs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IeQ-KA-Hhq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vgV-0V-pVD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="2vr-hC-2ro">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="What's something positive you'd like to share?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="E1v-t1-J14">
+                                            <rect key="frame" x="68" y="199" width="240" height="128"/>
+                                            <color key="backgroundColor" red="0.91587495264103513" green="0.99159263959390864" blue="0.94380223129944507" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="128" id="7ig-mN-ADA"/>
+                                                <constraint firstAttribute="width" constant="240" id="bXW-9A-WZN"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="15"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipToBounds" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </textView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contribute To The Beacon Community" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6GA-4G-5sB">
+                                            <rect key="frame" x="67" y="91" width="240" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="OeJ-xq-GuE"/>
+                                                <constraint firstAttribute="width" constant="240" id="gZ1-Ic-MG7"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yzv-hb-hOx">
+                                            <rect key="frame" x="107" y="398" width="162" height="50"/>
+                                            <color key="backgroundColor" red="0.40784313729999999" green="0.20392156859999999" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="162" id="494-Uu-HTp"/>
+                                                <constraint firstAttribute="height" constant="50" id="JPt-gE-zpu"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <state key="normal" title="Submit">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipToBounds" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <segue destination="u33-Tp-nS7" kind="show" id="858-Vj-nQl"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="E1v-t1-J14" firstAttribute="top" secondItem="6GA-4G-5sB" secondAttribute="bottom" constant="8" id="8Gg-Fj-C6R"/>
+                                        <constraint firstItem="Yzv-hb-hOx" firstAttribute="top" secondItem="E1v-t1-J14" secondAttribute="bottom" constant="71" id="E6n-4z-Tba"/>
+                                        <constraint firstItem="6GA-4G-5sB" firstAttribute="leading" secondItem="2vr-hC-2ro" secondAttribute="leading" constant="67" id="GM1-BP-hyA"/>
+                                        <constraint firstItem="6GA-4G-5sB" firstAttribute="top" secondItem="2vr-hC-2ro" secondAttribute="top" constant="91" id="TY9-bl-pkH"/>
+                                        <constraint firstItem="Yzv-hb-hOx" firstAttribute="top" secondItem="E1v-t1-J14" secondAttribute="bottom" constant="71" id="UEc-DG-tJH"/>
+                                        <constraint firstAttribute="trailing" secondItem="6GA-4G-5sB" secondAttribute="trailing" constant="68" id="Vad-yH-Im6"/>
+                                        <constraint firstAttribute="trailing" secondItem="E1v-t1-J14" secondAttribute="trailing" constant="67" id="Z6Y-Rs-NYh"/>
+                                        <constraint firstAttribute="bottom" secondItem="Yzv-hb-hOx" secondAttribute="bottom" constant="219" id="eG3-TR-D7L"/>
+                                        <constraint firstItem="E1v-t1-J14" firstAttribute="leading" secondItem="2vr-hC-2ro" secondAttribute="leading" constant="68" id="gVD-GI-iut"/>
+                                        <constraint firstItem="Yzv-hb-hOx" firstAttribute="leading" secondItem="2vr-hC-2ro" secondAttribute="leading" constant="107" id="vzF-Gz-rQ4"/>
+                                        <constraint firstAttribute="trailing" secondItem="Yzv-hb-hOx" secondAttribute="trailing" constant="106" id="wV2-kf-YLg"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.38113784789999999" green="0.84500747919999997" blue="0.71708971259999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vgV-0V-pVD" firstAttribute="height" secondItem="IeQ-KA-Hhq" secondAttribute="height" id="C7V-a6-fv5"/>
+                            <constraint firstItem="vgV-0V-pVD" firstAttribute="centerY" secondItem="IeQ-KA-Hhq" secondAttribute="centerY" id="Xie-bW-91c"/>
+                            <constraint firstItem="vgV-0V-pVD" firstAttribute="centerX" secondItem="IeQ-KA-Hhq" secondAttribute="centerX" id="kai-M1-ATu"/>
+                            <constraint firstItem="vgV-0V-pVD" firstAttribute="width" secondItem="IeQ-KA-Hhq" secondAttribute="width" id="xuF-By-WIa"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b2T-FO-kBg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-303.19999999999999" y="191.1544227886057"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="0yN-jh-tj9">
+            <objects>
+                <tableViewController id="u33-Tp-nS7" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="108" sectionHeaderHeight="28" sectionFooterHeight="28" id="pRw-HX-aDF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="108" id="UGC-CU-S64">
+                                <rect key="frame" x="0.0" y="28" width="375" height="108"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UGC-CU-S64" id="bY7-BU-4tI">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="107"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="u33-Tp-nS7" id="5VP-Ek-IVJ"/>
+                            <outlet property="delegate" destination="u33-Tp-nS7" id="A3U-Ka-35f"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fD7-GV-JYA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="357.60000000000002" y="196.55172413793105"/>
+        </scene>
+    </scenes>
+</document>
