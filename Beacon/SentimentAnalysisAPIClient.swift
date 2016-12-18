@@ -51,10 +51,7 @@ struct SentimentAnalysisAPIClient {
     typealias SentimentAnalysisCompletion = ([[String:Any]]?, Error?) -> ()
     
     static func analyzeSentiment(json: [String:Any], completion: @escaping SentimentAnalysisCompletion) {
-        
-        //need to test in batches? call this for every 15 messages?
 
-        
         let parameters : Parameters = json
         
         Alamofire.request(Constants.analyzeSentimentBaseURL, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: nil).responseJSON { (response) in
@@ -105,11 +102,14 @@ struct SentimentAnalysisAPIClient {
             
             if messagePolarity < 2 {
                 filteredMessages.remove(at: index)
+                //V2: keep negative messages for future analysis and to see if there are other words we need to filter out/be more vigilant of
             }
             
         }
         
-        print("filtered messages: \(filteredMessages)")
+        print("\n\n\n\n\n\n\n-------- GOOD VIBES ONLY <3 --------\n")
+        print("BEFORE FILTERING:\n \(messages)\n")
+        print("AFTER FILTERING:\n \(filteredMessages)\n")
         
         return filteredMessages
         
