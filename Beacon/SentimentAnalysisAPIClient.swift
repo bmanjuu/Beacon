@@ -17,10 +17,10 @@ struct SentimentAnalysisAPIClient {
             // each dictionary = 1 message 
             // dictionary format: ["text" : "blah blah bloop bloop batman",
             //                     "name" : "a girl has no name"]
-    //2. call sentiment analyzer API (may need to modify argument name of API method call to more accurately reflect what we're passing in... maybe 'messages'?) -- figure out how many messages you want to process at once so that we stay under limit!
+    //2. call sentiment analyzer API (may need to modify argument name of API method call to more accurately reflect what we're passing in... maybe 'messages'?) -- figure out how many messages you want to process at once so that we stay under limit! (can be kicked off at certain times of the day, may need to differentiate messages based on their time stamp so we're not analyzing the same message twice)
     //3. assess the results
     //4. filter out negative stuff / keep neutral - positive posts
-    //5. may need to create a list of words that we definitely do not want to be passed around in the community (i.e. offensive terms that the sentiment analyzer may not necessarily understand)
+    //5. ** V2 ** may need to create a list of words that we definitely do not want to be passed around in the community (i.e. offensive terms that the sentiment analyzer may not necessarily understand)
     
     private struct Constants {
         static let analyzeSentimentBaseURL = "http://www.sentiment140.com/api/bulkClassifyJson"
@@ -72,9 +72,9 @@ struct SentimentAnalysisAPIClient {
             
             if let data = response.result.value as? [String:Any] {
                 
-                guard let messageData = data["data"] as? [[String: Any]]
-                    else {
+                guard let messageData = data["data"] as? [[String: Any]] else {
                         print("failed to extract message data from response result")
+                        completion(nil, NaturalLangAPIError.InvalidJSONDictionaryCast)
                         return
                 }
                 
@@ -87,22 +87,31 @@ struct SentimentAnalysisAPIClient {
     }
     
     static func removeNegativeMessages(messages: [[String:Any]]) -> [[String:Any]] {
-        //previous method should call this one in completion handler
-        //if polarity < 2, remove comment
+        //negative < neutral < positive
+        //   0     <    2    <    4
         
-        // messages is a nested dictionary!
-        // layer 1: data = array of other dictionaries
-        // layer 2: array? of other dictionaries (accessed in removeNegative Messages method by calling messages.allValues ... for some reason, it is accessing everything as if it were one big dictionary
-        // may need to separate it into an array myself by components separated by "," or that meta thing
+        var filteredMessages = messages
         
         var count = 1
         
-        for message in messages {
+        for (index, message) in filteredMessages.enumerated() {
             print("message: \(count) - \(message)")
             count += 1
+            
+            guard let messagePolarity = message["polarity"] as? Int else {
+                print("error: \(NaturalLangAPIError.InvalidJSONDictionaryCast)")
+                break
+            }
+            
+            if messagePolarity < 2 {
+                filteredMessages.remove(at: index)
+            }
+            
         }
         
-        return messages
+        print("filtered messages: \(filteredMessages)")
+        
+        return filteredMessages
         
     }
 }
