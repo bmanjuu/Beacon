@@ -48,9 +48,12 @@ struct SentimentAnalysisAPIClient {
         case InvalidDictionaryDocsKey
     }
     
-    typealias SentimentAnalysisCompletion = (NSDictionary?, Error?) -> ()
+    typealias SentimentAnalysisCompletion = ([[String:Any]]?, Error?) -> ()
     
     static func analyzeSentiment(json: [String:Any], completion: @escaping SentimentAnalysisCompletion) {
+        
+        //need to test in batches? call this for every 15 messages?
+
         
         let parameters : Parameters = json
         
@@ -67,22 +70,40 @@ struct SentimentAnalysisAPIClient {
                     print("value: \(value)")
             }
             
-            if let data = response.result.value as? NSDictionary {
-                completion(data, nil)
+            if let data = response.result.value as? [String:Any] {
+                
+                guard let messageData = data["data"] as? [[String: Any]]
+                    else {
+                        print("failed to extract message data from response result")
+                        return
+                }
+                
+                print("message data: \(messageData)")
+                
+                completion(self.removeNegativeMessages(messages: messageData), nil)
             }
             
-            }
         }
+    }
     
-//    static func obtainFirebaseChatJSON(completion: @escaping (NSDictionary?, Error?) ->()) {
-//        print("obtain firebase JSON function called")
-//        Alamofire.request("https://friendlychat-f69f0.firebaseio.com/").responseJSON { (response) in
-//            print("firebase response: \(response)")
-//            if let jsonResponse = response.result.value as? NSDictionary {
-//                completion(jsonResponse, nil)
-//            }
-//        }
-//    }
-    
+    static func removeNegativeMessages(messages: [[String:Any]]) -> [[String:Any]] {
+        //previous method should call this one in completion handler
+        //if polarity < 2, remove comment
+        
+        // messages is a nested dictionary!
+        // layer 1: data = array of other dictionaries
+        // layer 2: array? of other dictionaries (accessed in removeNegative Messages method by calling messages.allValues ... for some reason, it is accessing everything as if it were one big dictionary
+        // may need to separate it into an array myself by components separated by "," or that meta thing
+        
+        var count = 1
+        
+        for message in messages {
+            print("message: \(count) - \(message)")
+            count += 1
+        }
+        
+        return messages
+        
+    }
 }
 

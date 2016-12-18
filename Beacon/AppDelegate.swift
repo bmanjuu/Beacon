@@ -19,21 +19,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FIRApp.configure()
-        let testJSONDocument = SentimentAnalysisAPIClient.obtainJSONContent()
-        print("test JSON Document: \(testJSONDocument)")
-        SentimentAnalysisAPIClient.analyzeSentiment(json: testJSONDocument, completion: {_,_ in
-            print("completed")
-            })
+//        let testJSONDocument = SentimentAnalysisAPIClient.obtainJSONContent()
+//        print("test JSON Document: \(testJSONDocument)")
+//        SentimentAnalysisAPIClient.analyzeSentiment(json: testJSONDocument, completion: {_,_ in
+//            print("completed")
+//            })
         
-        let secondTestJSON = [
-            "data" : [["text": "Pizza and cookies are awesome.", "name": "Julie"],
-            ["text": "I hate Titanic.", "name": "Jen"]]]
+        let secondTestJSON = ["data" : [["text": "Pizza and cookies are awesome.", "name": "Julie"],["text": "I hate Titanic.", "name": "Jen"]]]
         
         SentimentAnalysisAPIClient.analyzeSentiment(json: secondTestJSON, completion: {_,_ in
             print("second test json complete")
         })
-    
-    
+        
         return true
     }
     
