@@ -16,6 +16,7 @@
 		11888B191DDBE50D0048EC61 /* happy2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 11888B151DDBE50D0048EC61 /* happy2.jpg */; };
 		11888B1A1DDBE50D0048EC61 /* happy3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 11888B161DDBE50D0048EC61 /* happy3.jpg */; };
 		6E744D0E1E254D2E00CEC051 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E744D0D1E254D2E00CEC051 /* Secrets.swift */; };
+		6E744D101E254F2500CEC051 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E744D0F1E254F2500CEC051 /* SignInViewController.swift */; };
 		6EEE1EF41DDBC9520021CC96 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6EEE1EF31DDBC9520021CC96 /* GoogleService-Info.plist */; };
 		A40371EA1DDB9BA8001A1398 /* SentimentAnalysisAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40371E91DDB9BA8001A1398 /* SentimentAnalysisAPIClient.swift */; };
 		A4BF53DC1DDCADDF00E70736 /* testingLangAPI.json in Resources */ = {isa = PBXBuildFile; fileRef = A4BF53DB1DDCADDF00E70736 /* testingLangAPI.json */; };
@@ -37,6 +38,7 @@
 		11888B161DDBE50D0048EC61 /* happy3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = happy3.jpg; sourceTree = "<group>"; };
 		254EE1AEA022C67AEBD5E1F9 /* Pods_Beacon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beacon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E744D0D1E254D2E00CEC051 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		6E744D0F1E254F2500CEC051 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		6E8094341DDBA9A2007D2C37 /* GroupChatSetUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupChatSetUp.swift; sourceTree = "<group>"; };
 		6E977ABD1DDBA3F300C0B8A4 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		6E977ABF1DDBA42700C0B8A4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				11888B111DDBE2CD0048EC61 /* OnboardingPageVC.swift */,
+				6E744D0F1E254F2500CEC051 /* SignInViewController.swift */,
 				1140669A1DE2169900C44EF3 /* UserInputViewController.swift */,
 			);
 			name = Controllers;
@@ -196,7 +199,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Betty Fung";
 				TargetAttributes = {
 					A4F1F5731DD6B489001C8DDA = {
@@ -301,6 +304,7 @@
 				A40371EA1DDB9BA8001A1398 /* SentimentAnalysisAPIClient.swift in Sources */,
 				6E744D0E1E254D2E00CEC051 /* Secrets.swift in Sources */,
 				A4F1F5801DD6B48D001C8DDA /* Beacon.xcdatamodeld in Sources */,
+				6E744D101E254F2500CEC051 /* SignInViewController.swift in Sources */,
 				A4F1F57A1DD6B48D001C8DDA /* ViewController.swift in Sources */,
 				1140669B1DE2169900C44EF3 /* UserInputViewController.swift in Sources */,
 				A4F1F5781DD6B48D001C8DDA /* AppDelegate.swift in Sources */,
