@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0810"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,11 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-<<<<<<< HEAD
-               BlueprintIdentifier = "230081B63015A4BE222056664EC24855"
-=======
-               BlueprintIdentifier = "8CAD5ADC8879E5D6921C1CD3A7D0EB49"
->>>>>>> settingUpFirebase
+               BlueprintIdentifier = "0F3121461AC6A2B6F44E0EDE471A83A1"
                BuildableName = "Pods_Beacon.framework"
                BlueprintName = "Pods-Beacon"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -49,11 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-<<<<<<< HEAD
-            BlueprintIdentifier = "230081B63015A4BE222056664EC24855"
-=======
-            BlueprintIdentifier = "8CAD5ADC8879E5D6921C1CD3A7D0EB49"
->>>>>>> settingUpFirebase
+            BlueprintIdentifier = "0F3121461AC6A2B6F44E0EDE471A83A1"
             BuildableName = "Pods_Beacon.framework"
             BlueprintName = "Pods-Beacon"
             ReferencedContainer = "container:Pods.xcodeproj">
