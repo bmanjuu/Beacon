@@ -18,4 +18,9 @@ struct Constants {
         static let name = "name"
         static let text = "text"
     }
+    
+    struct Segues {
+        static let signInSegue = "signInSegue"
+        static let anonSegue = "anonSegue"
+    }
 }

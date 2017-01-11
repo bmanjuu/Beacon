@@ -212,7 +212,8 @@
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                             <connections>
-                                                <segue destination="aeP-XU-TpE" kind="show" id="5e7-Us-qqi"/>
+                                                <action selector="anonTapped:" destination="gfn-of-Rj5" eventType="touchUpInside" id="g9h-wX-JHn"/>
+                                                <segue destination="aeP-XU-TpE" kind="show" identifier="anonSegue" id="5e7-Us-qqi"/>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e47-Ox-nXf">
@@ -226,7 +227,8 @@
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                             <connections>
-                                                <segue destination="aeP-XU-TpE" kind="show" id="bH1-Eg-bUz"/>
+                                                <action selector="signInTapped:" destination="gfn-of-Rj5" eventType="touchUpInside" id="klU-mi-Ppj"/>
+                                                <segue destination="aeP-XU-TpE" kind="show" identifier="signInSegue" id="bH1-Eg-bUz"/>
                                             </connections>
                                         </button>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter your name..." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UNH-wK-M4e">
@@ -269,6 +271,12 @@
                             <constraint firstItem="oPY-Mi-Sq2" firstAttribute="width" secondItem="nL2-52-P6L" secondAttribute="width" id="z1W-fj-QhS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="anonButton" destination="gwa-Qf-Zub" id="k7r-ZC-UH5"/>
+                        <outlet property="locationTextField" destination="1yJ-2S-EUq" id="ep6-1b-XF9"/>
+                        <outlet property="nameTextField" destination="UNH-wK-M4e" id="EjX-Uc-jbq"/>
+                        <outlet property="signInButton" destination="e47-Ox-nXf" id="Fae-jN-9xE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3qP-Ed-Olp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

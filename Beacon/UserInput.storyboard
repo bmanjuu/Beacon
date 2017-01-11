@@ -71,6 +71,7 @@
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipToBounds" value="YES"/>
                                             </userDefinedRuntimeAttributes>
                                             <connections>
+                                                <action selector="submitButtonTapped:" destination="xKJ-a3-97f" eventType="touchUpInside" id="ook-9s-ckC"/>
                                                 <segue destination="u33-Tp-nS7" kind="show" id="858-Vj-nQl"/>
                                             </connections>
                                         </button>
@@ -100,6 +101,10 @@
                             <constraint firstItem="vgV-0V-pVD" firstAttribute="width" secondItem="IeQ-KA-Hhq" secondAttribute="width" id="xuF-By-WIa"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="messageTextView" destination="E1v-t1-J14" id="jmo-gl-WcN"/>
+                        <outlet property="submitButton" destination="Yzv-hb-hOx" id="Ftl-Gq-uHa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b2T-FO-kBg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -118,7 +123,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="108"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UGC-CU-S64" id="bY7-BU-4tI">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="108"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="107"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
