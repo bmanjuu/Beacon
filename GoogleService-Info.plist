@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>839449521693-v75e96qf0rg1vnb0ig52kq4s1aeb0fa2.apps.googleusercontent.com</string>
+	<string>782362279118-ru0ulmr0tk60iri31tlm2l05lhdof1aa.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.839449521693-v75e96qf0rg1vnb0ig52kq4s1aeb0fa2</string>
+	<string>com.googleusercontent.apps.782362279118-ru0ulmr0tk60iri31tlm2l05lhdof1aa</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCpjcEyxPoJFCtDwwf-qPTCSfJycKrGby0</string>
+	<string>AIzaSyAKDPhNAfZwy1G6qGeEyi6kTzXCbeDiqPg</string>
 	<key>GCM_SENDER_ID</key>
-	<string>839449521693</string>
+	<string>782362279118</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>bettyfung.Beacon</string>
 	<key>PROJECT_ID</key>
-	<string>beacon-41749</string>
+	<string>beacon-c1b85</string>
 	<key>STORAGE_BUCKET</key>
-	<string>beacon-41749.appspot.com</string>
+	<string>beacon-c1b85.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:839449521693:ios:1811df6d6d6ac335</string>
+	<string>1:782362279118:ios:1811df6d6d6ac335</string>
 	<key>DATABASE_URL</key>
-	<string>https://beacon-41749.firebaseio.com</string>
+	<string>https://beacon-c1b85.firebaseio.com</string>
 </dict>
 </plist>

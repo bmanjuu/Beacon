@@ -19,7 +19,7 @@
 		6E744D101E254F2500CEC051 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E744D0F1E254F2500CEC051 /* SignInViewController.swift */; };
 		6E854AB51E25C5A800FC8E2B /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E854AB41E25C5A800FC8E2B /* State.swift */; };
 		6E854AB71E25CA6300FC8E2B /* GroupChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E854AB61E25CA6300FC8E2B /* GroupChatViewController.swift */; };
-		6EEE1EF41DDBC9520021CC96 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6EEE1EF31DDBC9520021CC96 /* GoogleService-Info.plist */; };
+		6E854AB91E25D62000FC8E2B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6E854AB81E25D62000FC8E2B /* GoogleService-Info.plist */; };
 		A40371EA1DDB9BA8001A1398 /* SentimentAnalysisAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40371E91DDB9BA8001A1398 /* SentimentAnalysisAPIClient.swift */; };
 		A4BF53DC1DDCADDF00E70736 /* testingLangAPI.json in Resources */ = {isa = PBXBuildFile; fileRef = A4BF53DB1DDCADDF00E70736 /* testingLangAPI.json */; };
 		A4F1F5781DD6B48D001C8DDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F1F5771DD6B48D001C8DDA /* AppDelegate.swift */; };
@@ -43,8 +43,8 @@
 		6E744D0F1E254F2500CEC051 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		6E854AB41E25C5A800FC8E2B /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		6E854AB61E25CA6300FC8E2B /* GroupChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupChatViewController.swift; sourceTree = "<group>"; };
+		6E854AB81E25D62000FC8E2B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6E977ABF1DDBA42700C0B8A4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		6EEE1EF31DDBC9520021CC96 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8352DCBCB43F349139263CE8 /* Pods-Beacon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beacon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Beacon/Pods-Beacon.debug.xcconfig"; sourceTree = "<group>"; };
 		A40371E91DDB9BA8001A1398 /* SentimentAnalysisAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentimentAnalysisAPIClient.swift; sourceTree = "<group>"; };
 		A4BF53DB1DDCADDF00E70736 /* testingLangAPI.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testingLangAPI.json; sourceTree = "<group>"; };
@@ -132,6 +132,7 @@
 		A4F1F56B1DD6B489001C8DDA = {
 			isa = PBXGroup;
 			children = (
+				6E854AB81E25D62000FC8E2B /* GoogleService-Info.plist */,
 				A4F1F5761DD6B48D001C8DDA /* Beacon */,
 				A4F1F5751DD6B48D001C8DDA /* Products */,
 				588705F2FF23D8B51FD371A9 /* Pods */,
@@ -157,7 +158,6 @@
 				A4F1F5811DD6B48D001C8DDA /* Assets.xcassets */,
 				A4F1F5831DD6B48D001C8DDA /* LaunchScreen.storyboard */,
 				A4F1F5861DD6B48D001C8DDA /* Info.plist */,
-				6EEE1EF31DDBC9520021CC96 /* GoogleService-Info.plist */,
 				A4F1F57E1DD6B48D001C8DDA /* Beacon.xcdatamodeld */,
 				A40371E91DDB9BA8001A1398 /* SentimentAnalysisAPIClient.swift */,
 				A4BF53DB1DDCADDF00E70736 /* testingLangAPI.json */,
@@ -234,11 +234,11 @@
 				114066961DE20BC100C44EF3 /* UserInput.storyboard in Resources */,
 				11888B181DDBE50D0048EC61 /* Happy.jpg in Resources */,
 				11888B191DDBE50D0048EC61 /* happy2.jpg in Resources */,
-				6EEE1EF41DDBC9520021CC96 /* GoogleService-Info.plist in Resources */,
 				A4F1F5851DD6B48D001C8DDA /* LaunchScreen.storyboard in Resources */,
 				A4F1F5821DD6B48D001C8DDA /* Assets.xcassets in Resources */,
 				11888B171DDBE50D0048EC61 /* Happiness.jpg in Resources */,
 				11888B1A1DDBE50D0048EC61 /* happy3.jpg in Resources */,
+				6E854AB91E25D62000FC8E2B /* GoogleService-Info.plist in Resources */,
 				A4F1F57D1DD6B48D001C8DDA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
