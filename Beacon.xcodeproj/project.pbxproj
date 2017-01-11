@@ -151,9 +151,9 @@
 		A4F1F5761DD6B48D001C8DDA /* Beacon */ = {
 			isa = PBXGroup;
 			children = (
+				A4F1F5771DD6B48D001C8DDA /* AppDelegate.swift */,
 				6E977AC11DDBA45400C0B8A4 /* Models */,
 				11888B101DDBE1350048EC61 /* Controllers */,
-				A4F1F5771DD6B48D001C8DDA /* AppDelegate.swift */,
 				114066971DE20BD800C44EF3 /* Views */,
 				A4F1F5811DD6B48D001C8DDA /* Assets.xcassets */,
 				A4F1F5831DD6B48D001C8DDA /* LaunchScreen.storyboard */,
